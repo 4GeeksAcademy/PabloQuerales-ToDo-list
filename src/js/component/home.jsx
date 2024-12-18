@@ -33,7 +33,7 @@ const Home = () => {
 			{listElement.map((element) => {
 				return (
 					<ul className="list-group w-50 d-flex justify-content-between">
-						<li className="list-group-item d-flex justify-content-between ">
+						<li className="list-group-item d-flex justify-content-between task-item ">
 							{element}
 							<span className="button-delete" onClick={handleClick}>
 								x

@@ -28,6 +28,13 @@ h1 {
 }
 .button-delete {
 	cursor: pointer;
+	color: transparent;
+	visibility: hidden;
+}
+.task-item:hover .button-delete {
+	visibility: visible;
+	color: black;
+	transition: 0.2s;
 }
 .counter {
 	color: rgb(187, 70, 70);
