@@ -7,6 +7,10 @@ const Home = () => {
 
 	const handleNewTask = (e) => {
 		if (e.key === "Enter" && e.target.value !== "") {
+			if (listElement.includes(e.target.value)) {
+				alert("Esta tarea ya existe.");
+				return;
+			}
 			setListElement([...listElement, e.target.value]);
 			e.target.value = "";
 		}
